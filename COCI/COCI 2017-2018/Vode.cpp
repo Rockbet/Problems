@@ -20,6 +20,8 @@ int main(){
     int n, m, k;
 
     cin >> n >> m >> k;
+	
+    // 0-indexed for n and for m
 
     m--;
 

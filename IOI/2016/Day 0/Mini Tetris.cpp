@@ -4,7 +4,7 @@
 // To solve all the others cases, I used 6 types of fields, and only them. I proved that, being in one of the six fields,
 // we can reach one of them again by using any new piece into it.
 // Here are the types of fields ( a dot is an empty space and a '#' is an used space: 
-//    Type 1    Type 2    Type 3    Type 4    Type 5    Type 6
+//    Type 0    Type 1    Type 2    Type 3    Type 4    Type 5
 //   
 //    . . .     . . .     . . .     . . .     . . .     . . .
 //    . . .     . . .     . . .     . . .     . . .     . . .

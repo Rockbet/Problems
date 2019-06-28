@@ -14,103 +14,31 @@
 // To understand the way we added the new piece into each one of the possible matrix, just go to the if's inside the
 // void new_figure(int figure_type){}. :D
 
-#include <bits/stdc++.h>
- 
-using namespace std;
- 
-int mat=1, position, rotation;
- 
+#include <tetris.h>
+
+int mat=0, position, rotation;
+
 int get_position(){
     return position;
 }
- 
+
 int get_rotation(){
     return rotation;
 }
- 
+
 void init(int n){
 }
- 
+
 void new_figure(int figure_type){
     if(figure_type==1){
-        position=0;
-        rotation=0;
-        return;
+        position=0, rotation=0;
     }
     if(figure_type==2){
-        if(mat==1){
-            mat=3;
-            position=0;
-            rotation=0;
-            return;
-        }
-        if(mat==2){
-            mat=1;
-            position=1;
-            rotation=0;
-            return;
-        }
-        if(mat==3){
-            mat=4;
-            position=2;
-            rotation=1;
-            return;
-        }
-        if(mat==4){
-            mat=1;
-            position=0;
-            rotation=0;
-            return;
-        }
-        if(mat==5){
-            mat=2;
-            position=0;
-            rotation=1;
-            return;
-        }
-        if(mat==6){
-            mat=3;
-            position=1;
-            rotation=0;
-            return;
-        }
+        int pos[6]={0,1,2,0,0,1}, rot[6]={0,0,1,0,1,0}, matt[6]={2,0,3,0,1,2};
+        position=pos[mat], rotation=rot[mat], mat=matt[mat];
     }
     if(figure_type==3){
-        if(mat==1){
-            mat=6;
-            position=0;
-            rotation=0;
-            return;
-        }
-        if(mat==2){
-            mat=4;
-            position=1;
-            rotation=1;
-            return;
-        }
-        if(mat==3){
-            mat=5;
-            position=1;
-            rotation=2;
-            return;
-        }
-        if(mat==4){
-            mat=2;
-            position=0;
-            rotation=0;
-            return;
-        }
-        if(mat==5){
-            mat=3;
-            position=0;
-            rotation=3;
-            return;
-        }
-        if(mat==6){
-            mat=1;
-            position=1;
-            rotation=2;
-            return;
-        }
+        int pos[6]={0,1,1,0,0,1}, rot[6]={0,1,2,0,3,2}, matt[6]={5,3,4,1,2,0};
+        position=pos[mat], rotation=rot[mat], mat=matt[mat];
     }
 }

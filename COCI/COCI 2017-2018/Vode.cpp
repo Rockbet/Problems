@@ -1,3 +1,6 @@
+// COCI 2017 - Vode
+// Leonardo Paes
+
 // The idead I used to solve this problem is Dynamic Programming. I used a dp[position][number], it saves the winner if
 // whe are the animal at position == position and with this animal being able to choose a number from number+1 to number+1+k.
 // The base case is when number == m, because we know that the other animal type will win ( animal[i]^1 ).

@@ -1,3 +1,6 @@
+// COCI 2017 - Ronald
+// Leonardo Paes
+
 // Let's define: state==0 means a vertice has it initial edges and state==1 means a vertice swapped its edges.
 // We have to consider two cases: If an edge was given in the input or not. If it was, we have two options: both vertices of
 // the edge have state 0 or both have state 1, because we need to continue having this edge.

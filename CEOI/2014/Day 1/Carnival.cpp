@@ -5,7 +5,7 @@
 // costume and we want to know the costume of a new person, we just query the hole group. If the number of costume with this new person
 // increase by one, it is using a new costume and we will add it to the group. Otherwise, it has the same costume of another one from
 // the group. To find this one, we will recursively divide the group in the middle and query for one half the same way we did. When we
-// find the person with the same costume (when the group has only one person), we use join both in the same group.
+// find the person with the same costume (when the group has only one person), we join both to the same group.
 // Overall number of queries N*logN.
 
 #include <bits/stdc++.h>

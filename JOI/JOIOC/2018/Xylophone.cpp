@@ -6,9 +6,10 @@
 // the end point, with the same inequality. After knowing it, we find their neighbors using 1 query for each one. Then, we solve to the
 // left of the 1 position and to the left of the n position and to the right of the n position. To discover the number i knowning i+1 and
 // i+2 we can just use the differences: query(i, i+1) and query(i, i+2), using the inequality:
-// query(i, i+1) + abs(ans[i+1] - ans[i+2]) == query(i, i+2). Knowning this, one can determine the answer of pos[i].
-// We have to save a lot of queries when possible, because using this solution naively costs 2log2(n) + 2 + n-4 queries in worst case, 
-// which is ~ 10018.
+// query(i, i+1) + abs(ans[i+1] - ans[i+2]) == query(i, i+2). Knowning this, one can determine the answer of ith position. 
+// We have to save queries when possible, because using this solution naively costs:
+// 2log2(n) + 1 (1 and n are neighbors and one of them doesn't have another neighbor) + 2*(n-3) queries in worst case, 
+// which is ~ 10019.
 
 #include <bits/stdc++.h>
 #include "xylophone.h"

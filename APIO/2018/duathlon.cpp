@@ -2,14 +2,7 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-//#define int long long
-#define ar array
-#define sz(a) ((int)(a).size())
-#define all(a) (a).begin(),(a).end()
 typedef long long ll;
-typedef pair<int,int> pii;
-#define f first
-#define s second
 const int maxn = 1e5+10;
 vector<int> grafo[maxn], bcc[2*maxn];
 int n, m, in[maxn], low[maxn], sub[2*maxn], t, sz, bccs = 1; // tempo de entrada e menor tempo de entrada de back-edge
